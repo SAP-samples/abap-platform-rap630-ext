@@ -14,7 +14,7 @@ This repository contains additionial material for the RAP hands-on workshop call
 
 The source code is stored in a separate GitHub repository so that it is possible to install **ZRAP630_SOL** and **ZRAP630_SOL_EXT** in two different software components.  
 
-In the script both packages are both stored in **ZLOCAL** to make the setup easier.  
+In the script both packages are both stored in **ZLOCAL** so that the exercises can also be performed in shared trial systems.  In addition the components of the base RAP BO would have to be C0- and C1-released.  
 
 ## Requirements
 
