@@ -1,0 +1,9 @@
+CLASS zbp_zrap630r_shop_x_fbk_sol DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zrap630r_shoptp_sol.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_ZRAP630R_SHOP_X_FBK_SOL IMPLEMENTATION.
+ENDCLASS.
