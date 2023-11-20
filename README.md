@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/abap-platform-rap630-ext)](https://api.reuse.software/info/github.com/SAP-samples/abap-platform-rap630-ext)
+
 # SAP-samples/repository-template
 This default template for SAP Samples repositories includes files for README, LICENSE, and .reuse/dep5. All repositories on github.com/SAP-samples will be created based on this template.
 
@@ -22,9 +24,34 @@ Please edit this file as it is the primary description file for your project. Yo
 ## Description
 <!-- Please include SEO-friendly description -->
 
+This repository contains additionial material for the RAP hands-on workshop called _RAP630 - Use ABAP Cloud for developer extensibility_. It contains the source code of the solution for the extension of the package **ZRAP630_SOL**.  
+
+The source code is stored in a separate GitHub repository so that it is possible to install **ZRAP630_SOL** and **ZRAP630_SOL_EXT** in two different software components.  
+
+In the script both packages are both stored in **ZLOCAL** to make the setup easier.  
+
 ## Requirements
 
+The solution package **ZRAP630_SOL** of the GitHub repository `https://github.com/SAP-samples/abap-platform-rap630` has to be installed first, since this package contains the code to extend the same.
+
 ## Download and Installation
+
+The package ZRAP630_SOL_EXT that contains the solution of this workshop can be downloaded via abapGIT into an *SAP BTP, ABAP Environment* system or into the *SAP S/4HANA Cloud, ABAP environment* system.
+
+> Please note that this package has already been installed in the SAP BTP, ABAP Environment Trial systems !   
+> So there is no need to install it on an ABAP Environment trial system.   
+
+<details>
+  <summary>Click to expand download and installation steps.</summary>
+   
+1. Create a package **'ZRAP630_SOL_EXT'** with **'ZLOCAL'** as the superpackage.  
+2. Link this package with the URL of the RAP630 GitHub repository `https://github.com/SAP-samples/abap-platform-rap630-ext`.
+3. Use the branch `main`.
+4. Pull changes.
+5. Use mass activation to activate the objects that have been imported in step 3.
+6. Test the service binding `ZRAP630UI_SHOP_O4_SOL` of the base RAP business object that is being extended.  
+   
+</details>
 
 ## Known Issues
 <!-- You may simply state "No known issues. -->
